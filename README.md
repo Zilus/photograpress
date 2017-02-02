@@ -1,2 +1,4 @@
 # photograpress
-CMS For Photographers 
+Directus CMS for Photographers
+
+-- first try.

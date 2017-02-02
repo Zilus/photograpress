@@ -1,0 +1,6 @@
+# Log files
+*.log
+
+# System
+.DS_Store
+vendor
