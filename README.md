@@ -24,12 +24,18 @@ To check for strict mode:
 Instalation
 ====================
 `$ cd todir`
+
 `$ git clone https://github.com/Zilus/photograpress.git .`
+
 `$ composer install`
+
 `$ find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;`
+
 `$ mv api/config_sample.php api/config.php`
 
-`Edit api/config.php and change database access information.`
+
+Edit api/config.php and change database access information.
+
 `Import photograpress.sql to database`
 
 To upgrade run:
