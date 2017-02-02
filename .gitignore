@@ -4,3 +4,4 @@
 # System
 .DS_Store
 vendor
+api/config.php
