@@ -23,7 +23,7 @@ To check for strict mode:
 
 Instalation
 ====================
-`$ cd todir`
+`$ cd DOCROOT`
 
 `$ git clone https://github.com/Zilus/photograpress.git .`
 
