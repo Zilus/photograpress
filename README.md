@@ -1,12 +1,12 @@
-# photograpress
+# Photograpress
 Directus CMS for Photographers
 
 Requirements
 ====================
 * Apache HTTP Server
-*	mod_rewrite (help)
+*	mod_rewrite
 *	PHP 5.5+
-	**	curl
+	*	curl
 	*	gd
 	*	finfo
 	*	pdo_mysql
@@ -16,7 +16,9 @@ Requirements
 To check for strict mode:
 ====================
 `SELECT @@GLOBAL.sql_mode;`
+
 `SELECT @@SESSION.sql_mode;`
+
 `SHOW VARIABLES LIKE 'sql_mode';`
 
 Instalation
