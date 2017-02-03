@@ -1,4 +1,4 @@
-# Photograpress
+# Photograpress v1.0
 Directus CMS for Photographers
 
 Requirements
