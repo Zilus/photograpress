@@ -34,7 +34,21 @@ Instalation
 `$ mv api/config_sample.php api/config.php`
 
 
-Edit api/config.php and change database access information.
+Edit api/config.php and change database access information and path config.
+
+`define('DIRECTUS_PATH', '/photograpress/');`
+
+`define('DB_HOST', 'localhost');`
+
+`define('DB_PORT', 3306);`
+
+`define('DB_NAME', 'photograpress');`
+
+`define('DB_USER', 'photograpress');`
+
+`define('DB_PASSWORD', 'do]cTpR9T9T$');`
+
+`define('DB_PREFIX', '');`
 
 Edit photograpress.sql and change according to needs:
 `directus_settings: "project_name" and "project_url"`
