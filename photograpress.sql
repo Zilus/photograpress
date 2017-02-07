@@ -39,7 +39,7 @@ CREATE TABLE `directus_activity` (
   `logged_ip` varchar(20) DEFAULT NULL,
   `user_agent` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +48,7 @@ CREATE TABLE `directus_activity` (
 
 LOCK TABLES `directus_activity` WRITE;
 /*!40000 ALTER TABLE `directus_activity` DISABLE KEYS */;
-INSERT INTO `directus_activity` VALUES (1,'LOGIN','LOGIN',NULL,'directus_users',0,1,NULL,NULL,NULL,NULL,0,'2017-02-01 21:50:14','192.168.56.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36');
+INSERT INTO `directus_activity` VALUES (1,'LOGIN','LOGIN',NULL,'directus_users',0,1,NULL,NULL,NULL,NULL,0,'2017-02-07 19:25:46','192.168.56.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12'),(2,'LOGIN','LOGIN',NULL,'directus_users',0,1,NULL,NULL,NULL,NULL,0,'2017-02-07 20:54:16','192.168.56.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12');
 /*!40000 ALTER TABLE `directus_activity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -346,7 +346,7 @@ CREATE TABLE `directus_settings` (
   `value` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `Unique Collection and Name` (`collection`,`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -355,7 +355,7 @@ CREATE TABLE `directus_settings` (
 
 LOCK TABLES `directus_settings` WRITE;
 /*!40000 ALTER TABLE `directus_settings` DISABLE KEYS */;
-INSERT INTO `directus_settings` VALUES (1,'global','cms_user_auto_sign_out','60'),(2,'global','project_name','Photograpress'),(3,'global','project_url','http://192.168.56.101/photograpress/'),(4,'global','rows_per_page','200'),(5,'files','thumbnail_quality','100'),(6,'files','thumbnail_size','200'),(7,'global','cms_thumbnail_url',''),(8,'files','file_naming','file_id'),(9,'files','thumbnail_crop_enabled','1'),(10,'files','youtube_api_key','');
+INSERT INTO `directus_settings` VALUES (1,'global','cms_user_auto_sign_out','60'),(2,'global','project_name','Photograpress'),(3,'global','project_url','http://192.168.56.101/photograpress/'),(4,'global','rows_per_page','200'),(5,'files','thumbnail_quality','100'),(6,'files','thumbnail_size','200'),(7,'global','cms_thumbnail_url','img/logo.png'),(8,'files','file_naming','file_id'),(9,'files','thumbnail_crop_enabled','1'),(10,'files','youtube_api_key',''),(11,'global','max_file_size','2097152'),(12,'global','google_api_key','');
 /*!40000 ALTER TABLE `directus_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -471,7 +471,7 @@ CREATE TABLE `directus_users` (
 
 LOCK TABLES `directus_users` WRITE;
 /*!40000 ALTER TABLE `directus_users` DISABLE KEYS */;
-INSERT INTO `directus_users` VALUES (1,1,'Admin','User','oscar@azpeitia.mx','$2y$12$1OTDMMAoxOi3hRJnWcHqQu26IAKSl6fiRj7pBjV.mWGSmhOogVN8.','PStKGeBPzQoRtc9g','HxAyLSek7xd8qI3PaurGtdjHzxtk5FD5','e414fadd7b203c2f6668a667483f5bd07771100d','',NULL,'',1,'2017-02-01 21:50:14','2017-02-01 15:50:00','{\"path\":\"tables\",\"route\":\"tables\"}','',1,'//www.gravatar.com/avatar/524c1af278ee8990b7ca25539731bc98?s=200&d=identicon&r=g',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'es','America/New_York');
+INSERT INTO `directus_users` VALUES (1,1,'Admin','User','admin@photograpress.com','$2y$12$c18XG7EWPoP.THIXh15dQuCo89SYnV.DLF3kqSyaMD92HZNUvQOvi','rfR6ezYKonpj3bzm','vYgfoTemKN0qGYDeQbBoLoEVAWlMV9Di','dc4169d8cc1bb124160d7aecd7fd8b17b9ad1b37','',NULL,'',1,'2017-02-07 20:54:16','2017-02-07 15:19:00','{\"path\":\"tables\",\"route\":\"tables\"}','',1,'//www.gravatar.com/avatar/cbad385c74e9a48bbd3aa7903ed38b64?s=200&d=identicon&r=g',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'es','America/New_York');
 /*!40000 ALTER TABLE `directus_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -484,4 +484,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-01 19:39:26
+-- Dump completed on 2017-02-07 15:26:06
