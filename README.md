@@ -35,8 +35,15 @@ Instalation
 
 
 Edit api/config.php and change database access information.
+Edit photograpress.sql and change according to needs:
+`directus_settings: "project_name" and "project_url"`
+
+`directus_users: admin email`
+Leave the password untouched, the default passwd is "photograpress"
 
 `Import photograpress.sql to database`
+
+Change your logo, by overriting /img/logo.png (use a 170x100 png image)
 
 To upgrade run:
 ====================
