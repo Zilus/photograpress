@@ -55,7 +55,7 @@ Edit photograpress.sql and change according to needs:
 
 `directus_users: admin email`
 
-Leave the password untouched, the default passwd is "photograpress"
+Leave the password untouched, the default passwd is "photograpress", you can change it later on.
 
 Import photograpress.sql to database
 
