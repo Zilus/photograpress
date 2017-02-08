@@ -36,8 +36,6 @@ Instalation
 
 Edit api/config.php and change database access information and path config.
 
-`define('DIRECTUS_PATH', '/photograpress/');`
-
 `define('DB_HOST', 'localhost');`
 
 `define('DB_PORT', 3306);`
@@ -49,6 +47,8 @@ Edit api/config.php and change database access information and path config.
 `define('DB_PASSWORD', 'do]cTpR9T9T$');`
 
 `define('DB_PREFIX', '');`
+
+`define('DIRECTUS_PATH', '/photograpress/');`
 
 Edit photograpress.sql and change according to needs:
 `directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
