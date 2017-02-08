@@ -51,7 +51,7 @@ Edit api/config.php and change database access information and path config.
 `define('DB_PREFIX', '');`
 
 Edit photograpress.sql and change according to needs:
-`directus_settings: "project_name" and "project_url"`
+`directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
 
 `directus_users: admin email`
 
