@@ -65,7 +65,7 @@ To upgrade run:
 ====================
 `$ git pull origin master`
 
-DO NOT import the .sql file (just for new installations)
+DO NOT import photograpress.sql file to database (just for new installations)
 
 To get your access token run:
 ====================
