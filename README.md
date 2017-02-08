@@ -64,3 +64,7 @@ Change your logo, by overriting /img/logo.png (use a 170x100 png image)
 To upgrade run:
 ====================
 `$ git pull origin master`
+
+To get your access token run:
+====================
+`curl -d "email=[your email]&password=[your password]" https://yourdomain/api/1.1/auth/request-token`
