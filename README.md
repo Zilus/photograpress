@@ -64,7 +64,8 @@ Change your logo, by overriting /img/logo.png (use a 170x100 png image)
 To upgrade run:
 ====================
 `$ git pull origin master`
-DO NOT import the .sql file
+
+DO NOT import the .sql file (just for new installations)
 
 To get your access token run:
 ====================
