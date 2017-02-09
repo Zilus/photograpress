@@ -34,7 +34,9 @@ Instalation
 `$ mv api/config_sample.php api/config.php`
 
 
-Edit api/config.php and change database access information and path config.
+Edit api/config.php and change timezone, database access information and path config.
+
+`date_default_timezone_set('America/Mexico_City');`
 
 `define('DB_HOST', 'localhost');`
 
