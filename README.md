@@ -40,21 +40,21 @@ Edit api/config.php and change database access information and path config.
 
 `define('DB_PORT', 3306);`
 
-`define('DB_NAME', 'photograpress');`
+`define('DB_NAME', 'yourdb');`
 
-`define('DB_USER', 'photograpress');`
+`define('DB_USER', 'youruser');`
 
-`define('DB_PASSWORD', 'do]cTpR9T9T$');`
+`define('DB_PASSWORD', 'yourpasswd');`
 
 `define('DB_PREFIX', '');`
 
-`define('DIRECTUS_PATH', '/photograpress/');`
+`define('DIRECTUS_PATH', '/yourpath/');`
 
 Edit api/configuration.php and change files path.
 
-`'root_url' => '/photograpress/storage/uploads',`
+`'root_url' => '/yourpath/storage/uploads',`
 
-`'root_thumb_url' => '/photograpress/storage/uploads/thumbs',`
+`'root_thumb_url' => '/yourpath/storage/uploads/thumbs',`
 
 Edit photograpress.sql and change according to needs:
 `directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
