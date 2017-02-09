@@ -50,6 +50,12 @@ Edit api/config.php and change database access information and path config.
 
 `define('DIRECTUS_PATH', '/photograpress/');`
 
+Edit api/configuration.php and change files path.
+
+`'root_url' => '/photograpress/storage/uploads',`
+
+`'root_thumb_url' => '/photograpress/storage/uploads/thumbs',`
+
 Edit photograpress.sql and change according to needs:
 `directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
 
