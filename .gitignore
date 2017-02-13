@@ -6,3 +6,4 @@
 vendor
 api/config.php
 storage/
+nav.json
