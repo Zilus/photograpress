@@ -13,14 +13,6 @@ Requirements
 	*	mcrypt
 *	MySQL 5.2+ (No strict mode)
 
-To check for strict mode:
-====================
-`SELECT @@GLOBAL.sql_mode;`
-
-`SELECT @@SESSION.sql_mode;`
-
-`SHOW VARIABLES LIKE 'sql_mode';`
-
 Instalation
 ====================
 `$ cd DOCROOT`
