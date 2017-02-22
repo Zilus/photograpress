@@ -12,6 +12,7 @@ use Directus\Auth\Provider as Auth;
 use Directus\Db\Exception\DuplicateEntryException;
 use Directus\Db\RowGateway\AclAwareRowGateway;
 use Directus\Db\TableSchema;
+use Directus\Util\ArrayUtils;
 use Directus\Util\Formatting;
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\Adapter\Exception\InvalidQueryException;
@@ -176,7 +177,7 @@ class AclAwareTableGateway extends BaseTableGateway
         }
 
         try {
-            return parent::executeSelect($select);
+            return parent::executeSelect($select, ArrayUtils::get(func_get_args(), 1, []));
         } catch (InvalidQueryException $e) {
             if ('production' !== DIRECTUS_ENV) {
                 throw new \RuntimeException('This query failed: ' . $this->dumpSql($select), 0, $e);
@@ -221,7 +222,15 @@ class AclAwareTableGateway extends BaseTableGateway
 
             $result = parent::executeInsert($insert);
             $insertTableGateway = new self($this->acl, $insertTable, $this->adapter);
-            $resultData = $insertTableGateway->find($this->getLastInsertValue());
+
+            // hotfix: directus_tables does not have auto generated value primary key
+            if ($this->getTable() === 'directus_tables') {
+                $generatedValue = ArrayUtils::get($insertDataAssoc, $this->primaryKeyFieldName, 'table_name');
+            } else {
+                $generatedValue = $this->getLastInsertValue();
+            }
+
+            $resultData = $insertTableGateway->find($generatedValue);
 
             $this->runHook('table.insert', [$insertTable, $resultData]);
             $this->runHook('table.insert.' . $insertTable, [$resultData]);

@@ -30,7 +30,13 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic,400italic,500italic" type="text/css">
-  <link rel="stylesheet" href="{{path}}assets/css/directus.min.css?bust={{cacheBuster}}"/></head>
+  <!--build:css  {{path}}assets/css/directus.min.css?bust={{cacheBuster}}-->
+  <link rel="stylesheet" href="{{cssFilePath}}?bust={{cacheBuster}}">
+  <!--/build -->
+  <!--build:remove -->
+  <script type="text/javascript" src="{{path}}assets/js/util/chromecheck.js?bust={{cacheBuster}}"></script>
+  <!--/build -->
+</head>
 
 <body dir="{{dir}}">
 
@@ -77,6 +83,8 @@ window.directusData = {{data}};
 </script>
 
 <!-- Application source. -->
-<script src="{{path}}assets/js/directus.min.js?bust={{cacheBuster}}"></script>
+<!--build:js {{path}}assets/js/directus.min.js?bust={{cacheBuster}}-->
+<script data-main="{{path}}app/main" src="{{path}}assets/js/libs/require.js?bust={{cacheBuster}}"></script>
+<!--/build -->
 </body>
 </html>

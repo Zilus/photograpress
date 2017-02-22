@@ -172,6 +172,7 @@ $app->hook('slim.before.dispatch', function () use ($app, $requestNonceProvider,
         }
 
         if ($authToken) {
+            // @TODO: Users without group shouldn't be allow to log in
             $DirectusUsersTableGateway = new \Zend\Db\TableGateway\TableGateway('directus_users', $ZendDb);
             $user = $DirectusUsersTableGateway->select(['token' => $authToken]);
             $userFound = $user->count() > 0 ? true : false;
@@ -1034,12 +1035,14 @@ $app->map("/$v/tables/:table/rows/:id/?", function ($table, $id) use ($ZendDb, $
 $app->get("/$v/activity/?", function () use ($params, $ZendDb, $acl) {
     $Activity = new DirectusActivityTableGateway($acl, $ZendDb);
     // @todo move this to backbone collection
-    if (!$params['adv_search']) {
+    if (!ArrayUtils::has($params, 'adv_search')) {
         unset($params['perPage']);
         $params['adv_search'] = 'datetime >= "' . DateUtils::daysAgo(30) . '"';
     }
+
     $new_get = $Activity->fetchFeed($params);
     $new_get['active'] = $new_get['total'];
+
     JsonView::render($new_get);
 });
 
