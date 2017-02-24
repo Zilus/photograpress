@@ -1,0 +1,27 @@
+{
+  "Contenido": {
+      "Galería": {
+          "path": "tables/galeria"
+      },
+      "Proyectos": {
+          "path": "tables/proyectos"
+      },
+      "Slider": {
+          "path": "tables/slider"
+      }
+  },
+  "Sitio": {
+      "Acerca de": {
+          "path": "tables/acerca"
+      },
+      "Contacto": {
+          "path": "tables/contacto"
+      },
+      "Metadatos": {
+          "path": "tables/meta"
+      },
+      "Sociales": {
+          "path": "tables/redes_sociales"
+      }
+  }
+}
