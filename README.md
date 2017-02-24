@@ -50,14 +50,14 @@ Edit api/configuration.php and change files path.
 
 `'root_thumb_url' => '/yourpath/storage/uploads/thumbs',`
 
-Edit photograpress.sql and change according to needs:
-`directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
-
-`directus_users: admin email`
 
 Database
 ====================
-The default login is: admin@photograpress.com (you can change it if you want)
+Edit photograpress.sql and change according to needs:
+`directus_settings: "project_name", "project_url" and "cms_thumbnail_url"`
+
+The default admin login is: admin@photograpress.com (you can change it if you want, by replacing: `directus_users: admin email`)
+
 Leave the password untouched, the default passwd is "photograpress", you can change it later on.
 
 Import photograpress.sql to database
