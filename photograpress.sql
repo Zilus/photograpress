@@ -528,7 +528,7 @@ CREATE TABLE `directus_users` (
 
 LOCK TABLES `directus_users` WRITE;
 /*!40000 ALTER TABLE `directus_users` DISABLE KEYS */;
-INSERT INTO `directus_users` VALUES (1,1,'Admin','User','admin@photograpress.com','$2y$12$c18XG7EWPoP.THIXh15dQuCo89SYnV.DLF3kqSyaMD92HZNUvQOvi','rfR6ezYKonpj3bzm','vYgfoTemKN0qGYDeQbBoLoEVAWlMV9Di','196c06224c7ac14aa5f8d8bf567905f6cd907d99','',NULL,'',1,'2017-02-24 19:08:56','2017-02-24 13:34:00','{\"path\":\"tables/redes_sociales/new\",\"route\":\"entry\"}','',1,'//www.gravatar.com/avatar/cbad385c74e9a48bbd3aa7903ed38b64?s=200&d=identicon&r=g',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'es','America/New_York');
+INSERT INTO `directus_users` VALUES (1,1,'Admin','User','admin@photograpress.com','$2y$12$c18XG7EWPoP.THIXh15dQuCo89SYnV.DLF3kqSyaMD92HZNUvQOvi','rfR6ezYKonpj3bzm','vYgfoTemKN0qGYDeQbBoLoEVAWlMV9Di','196c06224c7ac14aa5f8d8bf567905f6cd907d99','',NULL,'',1,'2017-02-24 19:08:56','2017-02-24 13:50:00','{\"path\":\"users/new\",\"route\":\"user\"}','',1,'//www.gravatar.com/avatar/cbad385c74e9a48bbd3aa7903ed38b64?s=200&d=identicon&r=g',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'es','America/New_York');
 /*!40000 ALTER TABLE `directus_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -592,4 +592,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-24 13:37:51
+-- Dump completed on 2017-02-24 13:53:43
