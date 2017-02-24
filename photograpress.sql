@@ -484,4 +484,28 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+
+DROP TABLE IF EXISTS `meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `meta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `active` int(11) NOT NULL DEFAULT '2',
+  `titulo` varchar(100) DEFAULT NULL,
+  `descripcion` varchar(100) DEFAULT NULL,
+  `google_analytics` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `meta`
+--
+
+LOCK TABLES `meta` WRITE;
+/*!40000 ALTER TABLE `meta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `meta` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
 -- Dump completed on 2017-02-07 15:26:06
