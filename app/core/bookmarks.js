@@ -22,26 +22,14 @@ function(app, Backbone, EntriesManager, __t, Notification) {
   var Bookmarks = {};
 
   Bookmarks.Collection = Backbone.Collection.extend({
-    constructor: function(models, options) {
+    initialize: function(models, options) {
       this.url = app.API_URL + 'bookmarks/';
-
       this.isCustomBookmarks = options.isCustomBookmarks || false;
-      if (!this.isCustomBookmarks) {
-        options.comparator = this._comparator;
-      }
-
-      Backbone.Collection.prototype.constructor.apply(this, [models, options]);
     },
 
-    _comparator: function(a, b) {
-      if (a.get('title') < b.get('title')) {
-        return -1;
-      }
-
-      if (a.get('title') > b.get('title')) {
-        return 1;
-      }
-
+    comparator: function(a, b) {
+      if(a.get('title') < b.get('title')) return -1;
+      if(a.get('title') > b.get('title')) return 1;
       return 0;
     },
 
