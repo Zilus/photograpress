@@ -9,6 +9,7 @@ assets/css/*.map
 Icon
 .DS_Store
 dist/*
+.github
 
 # Don't track composer phar/vendors
 composer.phar
@@ -34,4 +35,3 @@ customs/uis/*
 .gulp-scss-cache
 node_modules
 storage
-
