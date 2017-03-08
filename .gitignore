@@ -18,17 +18,6 @@ vendor
 # Ignore log files, but track the log README
 *.log
 
-!customs/endpoints/_example.php
-customs/extensions/*
-!customs/extensions/.gitignore
-!customs/extensions/_example/
-customs/uis/*
-!customs/uis/.gitignore
-/customs/listviews/*
-!customs/listviews/.gitignore
-!storage/uploads/.gitignore
-!storage/uploads/thumbs/.gitignore
-
 # Ignore dev files
 .idea
 .sass-cache
