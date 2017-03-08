@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "07583268949c63473120a768ea8bb80e",
+    "content-hash": "68b1b9987dfe9593c89cd9afcef6e968",
     "packages": [
         {
             "name": "directus/collection",
@@ -47,21 +47,21 @@
         },
         {
             "name": "directus/database",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/directus/directus-database.git",
-                "reference": "77dbc402f4430df8c9782e82bc165e9250508a30"
+                "reference": "275d946308456d3009b46fa9746b34858406b736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/directus/directus-database/zipball/77dbc402f4430df8c9782e82bc165e9250508a30",
-                "reference": "77dbc402f4430df8c9782e82bc165e9250508a30",
+                "url": "https://api.github.com/repos/directus/directus-database/zipball/275d946308456d3009b46fa9746b34858406b736",
+                "reference": "275d946308456d3009b46fa9746b34858406b736",
                 "shasum": ""
             },
             "require": {
                 "directus/collection": "0.9.*@dev",
-                "php": ">=5.4.0",
+                "php": ">=5.5.0",
                 "zendframework/zend-db": "dev-directus"
             },
             "require-dev": {
@@ -90,7 +90,7 @@
                 "database",
                 "directus"
             ],
-            "time": "2017-02-20T16:18:04+00:00"
+            "time": "2017-03-01T22:06:32+00:00"
         },
         {
             "name": "directus/migrations",
@@ -190,12 +190,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "6d64f3b51299db6cd56ab9d3a56fce5b38b397e0"
+                "reference": "b22755b1b6f714d25245a2822d1b1a0a3a446c2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/6d64f3b51299db6cd56ab9d3a56fce5b38b397e0",
-                "reference": "6d64f3b51299db6cd56ab9d3a56fce5b38b397e0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b22755b1b6f714d25245a2822d1b1a0a3a446c2f",
+                "reference": "b22755b1b6f714d25245a2822d1b1a0a3a446c2f",
                 "shasum": ""
             },
             "require": {
@@ -265,7 +265,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-02-18 07:49:08"
+            "time": "2017-03-01 10:42:15"
         },
         {
             "name": "slim/extras",
@@ -360,12 +360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "85d85209dccf325c1357b444a7c9b3a4a1852627"
+                "reference": "7f075aa497bc08559ea26350fa222492f40657f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/85d85209dccf325c1357b444a7c9b3a4a1852627",
-                "reference": "85d85209dccf325c1357b444a7c9b3a4a1852627",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7f075aa497bc08559ea26350fa222492f40657f7",
+                "reference": "7f075aa497bc08559ea26350fa222492f40657f7",
                 "shasum": ""
             },
             "require": {
@@ -406,7 +406,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-02-13 09:07:58"
+            "time": "2017-02-24 19:52:51"
         },
         {
             "name": "twig/twig",
@@ -414,12 +414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "b6a16a21f93dc80a48cb140c32d3beb44458d9c3"
+                "reference": "27d7ea9675aa312d48f382f3c71c10bebce768a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b6a16a21f93dc80a48cb140c32d3beb44458d9c3",
-                "reference": "b6a16a21f93dc80a48cb140c32d3beb44458d9c3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/27d7ea9675aa312d48f382f3c71c10bebce768a9",
+                "reference": "27d7ea9675aa312d48f382f3c71c10bebce768a9",
                 "shasum": ""
             },
             "require": {
@@ -468,7 +468,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-02-17 19:29:51"
+            "time": "2017-02-27 00:07:56"
         },
         {
             "name": "zendframework/zend-db",
@@ -528,31 +528,31 @@
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "dev-develop",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "16818ed8ee2a92a503c43883dcb6263fe6283ee8"
+                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/16818ed8ee2a92a503c43883dcb6263fe6283ee8",
-                "reference": "16818ed8ee2a92a503c43883dcb6263fe6283ee8",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/8bafa58574204bdff03c275d1d618aaa601588ae",
+                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^5.5 || ^7.0"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.6.2"
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
+                    "dev-master": "3.0-dev",
+                    "dev-develop": "3.1-dev"
                 }
             },
             "autoload": {
@@ -569,7 +569,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2016-09-13 14:40:02"
+            "time": "2016-04-12T21:19:36+00:00"
         }
     ],
     "packages-dev": [
@@ -724,25 +724,30 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "1.0.8",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260"
+                "reference": "3dcf38ca72b158baf0bc245e9184d3fdffa9c46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/38e9124049cf1a164f1e4537caf19c99bf1eb260",
-                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
+                "reference": "3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4|~5"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -764,7 +769,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12T18:03:57+00:00"
+            "time": "2017-02-26T11:10:40+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -952,12 +957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "ca21067a8d57060d76545679f42dedff94287e97"
+                "reference": "2a7bab3c16f6f452c47818fdd08f3b1e49ffcf7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/ca21067a8d57060d76545679f42dedff94287e97",
-                "reference": "ca21067a8d57060d76545679f42dedff94287e97",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/2a7bab3c16f6f452c47818fdd08f3b1e49ffcf7d",
+                "reference": "2a7bab3c16f6f452c47818fdd08f3b1e49ffcf7d",
                 "shasum": ""
             },
             "require": {
@@ -993,7 +998,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-18T17:06:33+00:00"
+            "time": "2017-03-01T18:13:50+00:00"
         }
     ],
     "aliases": [],
