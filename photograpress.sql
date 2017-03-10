@@ -412,7 +412,7 @@ CREATE TABLE `directus_settings` (
 
 LOCK TABLES `directus_settings` WRITE;
 /*!40000 ALTER TABLE `directus_settings` DISABLE KEYS */;
-INSERT INTO `directus_settings` VALUES (1,'global','cms_user_auto_sign_out','60'),(2,'global','project_name','Photograpress'),(3,'global','project_url','http://192.168.56.101/photograpress/'),(4,'global','rows_per_page','200'),(5,'files','thumbnail_quality','100'),(6,'files','thumbnail_size','200'),(7,'global','cms_thumbnail_url','//192.168.56.101/photograpress/img/logo.png'),(8,'files','file_naming','file_id'),(9,'files','thumbnail_crop_enabled','1'),(10,'files','youtube_api_key',''),(11,'global','max_file_size','2097152'),(12,'global','google_api_key','');
+INSERT INTO `directus_settings` VALUES (1,'global','cms_user_auto_sign_out','60'),(2,'global','project_name','Photograpress'),(3,'global','project_url','http://192.168.56.101/photograpress/'),(4,'global','rows_per_page','200'),(5,'files','thumbnail_quality','100'),(6,'files','thumbnail_size','400'),(7,'global','cms_thumbnail_url','//192.168.56.101/photograpress/img/logo.png'),(8,'files','file_naming','file_id'),(9,'files','thumbnail_crop_enabled','1'),(10,'files','youtube_api_key',''),(11,'global','max_file_size','2097152'),(12,'global','google_api_key','');
 /*!40000 ALTER TABLE `directus_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
