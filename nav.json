@@ -1,10 +1,13 @@
 {
   "Contenido": {
       "Galería": {
-          "path": "tables/galeria"
+          "path": "tables/galerias"
       },
       "Proyectos": {
           "path": "tables/proyectos"
+      },
+      "Historias": {
+          "path": "tables/historias"
       },
       "Slider": {
           "path": "tables/slider"
