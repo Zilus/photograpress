@@ -60,9 +60,6 @@ The default admin login is: admin@photograpress.com (you can change it if you wa
 
 Leave the password untouched, the default passwd is "photograpress", you can change it later on.
 
-The default API access user is: api@photograpress.com, the dafault passwd is: 'pH070gR4pr35s'
-
-
 Import photograpress.sql to database
 
 Change your logo, by overriting /img/logo.png (use a 170x100 png image)
