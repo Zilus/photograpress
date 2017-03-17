@@ -6,11 +6,16 @@
       "Proyectos": {
           "path": "tables/proyectos"
       },
-      "Historias": {
-          "path": "tables/historias"
-      },
       "Slider": {
           "path": "tables/slider"
+      }
+  },
+  "Blog": {
+      "Entradas": {
+          "path": "tables/entradas"
+      },
+      "Categorías": {
+          "path": "tables/categorias"
       }
   },
   "Sitio": {
