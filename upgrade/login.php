@@ -85,11 +85,11 @@ $cacheBuster = Directus\Util\Git::getCloneHash($git);
 <form action="<?= DIRECTUS_PATH ?>api/1/auth/login" method="post" class="login-box" autocomplete="off">
     <div class='login-panel'>
         <p class="">
-            <input type="email" name="email" placeholder="<?= __t('placeholder_email_address'); ?>" spellcheck="false"
+            <input type="email" name="email" placeholder="Usuario" spellcheck="false"
                    autocomplete="off" autocorrect="off" autocapitalize="off"/>
         </p>
         <p class="">
-            <input type="password" name="password" placeholder="<?= __t('password_placeholder'); ?>" spellcheck="false"
+            <input type="password" name="password" placeholder="Contraseña" spellcheck="false"
                    autocomplete="off" autocorrect="off" autocapitalize="off"/>
             <span id="forgot-password" title="<?= __t('forgot_password'); ?>" class="btn btn-primary"><i
                     class="material-icons">help</i></span>
