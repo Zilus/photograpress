@@ -92,7 +92,7 @@ $cacheBuster = Directus\Util\Git::getCloneHash($git);
             <input type="password" name="password" placeholder="Contraseña" spellcheck="false"
                    autocomplete="off" autocorrect="off" autocapitalize="off"/>
             <span id="forgot-password" title="olvidaste tu contraseña" class="btn btn-primary"><i
-                    class="material-icons">ayuda</i></span>
+                    class="material-icons">help</i></span>
         </p>
         <p class="clearfix no-margin">
             <button type="submit" class="btn primary">Entrar</button>
