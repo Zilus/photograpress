@@ -15,6 +15,7 @@ unzip master.zip
 
 echo "Sync files"
 rsync -avv directus-master/ ../
+/bin/cp main.html ../
 /bin/cp login.php ../
 /bin/cp README.md ../
 /bin/cp .gitignore ../
