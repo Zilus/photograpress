@@ -1,0 +1,46 @@
+{{#if isCustomBookmarks}}
+  {{#each bookmarks}}
+    {{#if isCustomBookmark}}
+    <div class="sidebar-section tables-sidebar">
+      <div class="sidebar-group">{{@key}}</div>
+      {{#each this}}
+      <li class="{{#if active_bookmark}}active{{/if}} sidebar-subitem" title="{{capitalize title}}">
+          <a href="{{url}}">
+            {{capitalize title}}
+          </a>
+      </li>
+      {{/each}}
+    </div>
+    {{/if}}
+  {{/each}}
+{{else}}
+<div class="sidebar-section tables-sidebar">
+  <div class="sidebar-group">{{t "tables"}}</div>
+  {{#unless bookmarks.table}}
+   <li class="sidebar-subitem disabled" title="{{t 'there_are_no_tables_you_have_permission_to_view'}}"><a>{{t "no_tables"}}</a></li>
+  {{/unless}}
+  {{#bookmarks.table}}
+  <li class="{{#if active_bookmark}}active{{/if}} sidebar-subitem" title="{{capitalize title}}">
+      <a href="{{url}}">
+        {{capitalize title}}
+      </a>
+  </li>
+  {{/bookmarks.table}}
+</div>
+{{/if}}
+
+{{#if bookmarks.other}}
+<div class="sidebar-section other-sidebar">
+  <div class="sidebar-group">{{t "system"}}</div>
+  {{#bookmarks.other}}
+  <li class="{{#if active_bookmark}}active{{/if}} sidebar-subitem" title="{{capitalize title}}">
+      <a href="{{url}}">
+        <span class="sidebar-label">{{capitalize title}}</span>
+        {{#if unread}}
+        <span class="unread-color">●</span>
+        {{/if}}
+      </a>
+  </li>
+  {{/bookmarks.other}}
+</div>
+{{/if}}
