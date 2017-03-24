@@ -17,6 +17,12 @@ Instalation
 ====================
 `$ cd DOCROOT`
 
+Clean the directory, I use (dangerous command if you're not in the DOCROOT):
+
+`$ rm -Rfv *`
+
+`$ rm -Rfv .*`
+
 `$ git clone https://github.com/Zilus/photograpress.git .`
 
 `$ composer install`
