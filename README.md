@@ -80,6 +80,12 @@ To upgrade run:
 ====================
 `$ git pull origin master`
 
+If it gets you overriting by merge errors, and you want to fetch anyway:
+
+`git fetch --all`
+
+`git reset --hard origin/master`
+
 DO NOT import photograpress.sql file to database (just for new installations)
 
 To get your access token run:
