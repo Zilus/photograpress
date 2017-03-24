@@ -91,11 +91,11 @@ $cacheBuster = Directus\Util\Git::getCloneHash($git);
         <p class="">
             <input type="password" name="password" placeholder="Contraseña" spellcheck="false"
                    autocomplete="off" autocorrect="off" autocapitalize="off"/>
-            <span id="forgot-password" title="<?= __t('forgot_password'); ?>" class="btn btn-primary"><i
-                    class="material-icons">help</i></span>
+            <span id="forgot-password" title="olvidaste tu contraseña" class="btn btn-primary"><i
+                    class="material-icons">ayuda</i></span>
         </p>
         <p class="clearfix no-margin">
-            <button type="submit" class="btn primary"><?= __t('sign_in'); ?></button>
+            <button type="submit" class="btn primary">Entrar</button>
         </p>
     </div>
     <p class="error" style="<?= ($errorMessage === null) ? 'display:none;': '';?>"><?= ($errorMessage !== null) ? '<i class="material-icons">warning</i>' . $errorMessage : '';?></p>
