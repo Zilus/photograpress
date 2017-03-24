@@ -25,6 +25,8 @@ Instalation
 
 `$ mv api/config_sample.php api/config.php`
 
+`$ mv api/configuration_sample.php api/configuration.php`
+
 
 Edit api/config.php and change timezone, database access information and path config.
 
@@ -42,9 +44,13 @@ Edit api/config.php and change timezone, database access information and path co
 
 `define('DB_PREFIX', '');`
 
-`define('DIRECTUS_PATH', '/yourpath/');`
+`define('DIRECTUS_PATH', '/your_instalation_path/');`
 
 Edit api/configuration.php and change files path.
+
+`'session' => [
+        'prefix' => 'your-session-name_'
+    ],`
 
 `'root_url' => '/yourpath/storage/uploads',`
 
