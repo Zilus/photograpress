@@ -16,6 +16,9 @@
       },
       "Categorías": {
           "path": "tables/categorias"
+      },
+      "Comentarios": {
+          "path": "tables/comentarios"
       }
   },
   "Sitio": {
