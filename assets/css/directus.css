@@ -3506,6 +3506,10 @@ input[type="checkbox"].custom-check + label tbody.remove-hover-state .sort span:
     font-size: 12px;
     list-style: none;
     cursor: pointer; }
+    .cards .card .header-image img {
+      min-height: 100% !important;
+      width: 100% !important;
+    }
     .cards .card.inactive {
       opacity: 0.4; }
     .cards .card:hover .info .featured .primary-info {
