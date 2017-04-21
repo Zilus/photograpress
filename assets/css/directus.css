@@ -3522,6 +3522,10 @@ input[type="checkbox"].custom-check + label tbody.remove-hover-state .sort span:
       background-color: #ececec;
       text-align: center;
       border-radius: 4px 4px 0 0; }
+      .cards .card .header-image img {
+        min-height: 100%;
+        width: 100%;
+      }
       .cards .card .header-image:hover {
         cursor: pointer; }
         .cards .card .header-image:hover .tool-item {

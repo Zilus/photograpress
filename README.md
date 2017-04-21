@@ -17,12 +17,6 @@ Instalation
 ====================
 `$ cd DOCROOT`
 
-Clean the directory, I use (dangerous command if you're not in the DOCROOT):
-
-`$ rm -Rfv *`
-
-`$ rm -Rfv .*`
-
 `$ git clone https://github.com/Zilus/photograpress.git .`
 
 `$ composer install`
@@ -30,8 +24,6 @@ Clean the directory, I use (dangerous command if you're not in the DOCROOT):
 `$ find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;`
 
 `$ mv api/config_sample.php api/config.php`
-
-`$ mv api/configuration_sample.php api/configuration.php`
 
 
 Edit api/config.php and change timezone, database access information and path config.
@@ -50,13 +42,9 @@ Edit api/config.php and change timezone, database access information and path co
 
 `define('DB_PREFIX', '');`
 
-`define('DIRECTUS_PATH', '/your_instalation_path/');`
+`define('DIRECTUS_PATH', '/yourpath/');`
 
 Edit api/configuration.php and change files path.
-
-`'session' => [
-        'prefix' => 'your-session-name_'
-    ],`
 
 `'root_url' => '/yourpath/storage/uploads',`
 
@@ -79,12 +67,6 @@ Change your logo, by overriting /img/logo.png (use a 170x100 png image)
 To upgrade run:
 ====================
 `$ git pull origin master`
-
-If it gets you overriting by merge errors, and you want to fetch anyway:
-
-`git fetch --all`
-
-`git reset --hard origin/master`
 
 DO NOT import photograpress.sql file to database (just for new installations)
 
