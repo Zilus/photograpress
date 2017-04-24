@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('America/Mexico_City');
 
 define('API_VERSION', 1);
 
@@ -18,9 +18,9 @@ define('DIRECTUS_ENV', 'development');
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_PORT', 3306);
-define('DB_NAME', 'directus');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'password');
+define('DB_NAME', 'yourdb');
+define('DB_USER', 'youruser');
+define('DB_PASSWORD', 'yourpasswd');
 define('DB_PREFIX', '');
 
 define('DB_HOST_SLAVE', ''); //Leave undefined to fall back on master
@@ -28,7 +28,7 @@ define('DB_USER_SLAVE', '');
 define('DB_PASSWORD_SLAVE', '');
 
 // Url path to Directus
-define('DIRECTUS_PATH', '/directus/');
+define('DIRECTUS_PATH', '/');
 
 $host = 'www.example.com'; // (Make it work for CLI)
 if (isset($_SERVER['SERVER_NAME'])) {
