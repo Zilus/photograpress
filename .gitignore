@@ -13,8 +13,8 @@ dist/*
 .github
 
 # Don't track composer phar/vendors
-composer.phar
-vendor
+#composer.phar
+#vendor
 
 # Ignore log files, but track the log README
 *.log

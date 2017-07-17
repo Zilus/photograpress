@@ -1,0 +1,32 @@
+#!/bin/bash
+function sedeasy {
+  sed -i "s/$(echo $1 | sed -e 's/\([[\/.*]\|\]\)/\\&/g')/$(echo $2 | sed -e 's/[\/&]/\\&/g')/g" $3
+}
+
+DBNAME=$1
+DBUSER=$2
+DBPASSWD=$3
+ADMIN=$4
+
+cd ~/CMS/$ADMIN/
+#rm -Rfv ~/CMS/$ADMIN/*
+#rm -Rfv ~/CMS/$ADMIN/.*
+git clone https://github.com/Zilus/photograpress.git .
+
+composer install
+
+find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;
+
+mv api/config_sample.php api/config.php
+mv api/configuration_sample.php api/configuration.php
+
+sed -i -e "s/yourdb/$DBNAME/g" api/config.php
+sed -i -e "s/youruser/$DBUSER/g" api/config.php
+sedeasy "yourpasswd" "$DBPASSWD" api/config.php
+
+sed -i -e "s@http://192.168.56.101/photograpress/@https://$ADMIN/@g" photograpress.sql
+sed -i -e "s@192.168.56.101/photograpress/@$ADMIN/@g" photograpress.sql
+
+mysql -u photog12 -pm14tz88OUz $DBNAME < photograpress.sql
+
+php bin/directus user:password -e editor@photograpress.com -p testpasswd
