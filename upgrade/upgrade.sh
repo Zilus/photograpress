@@ -15,14 +15,14 @@ unzip master.zip
 
 echo "Sync files"
 rsync -avv directus-master/ ../
-/bin/cp bookmarks-list.html ../app/templates/bookmarks-list.html
-/bin/cp main.html ../
-/bin/cp login.php ../
-/bin/cp README.md ../
-/bin/cp .gitignore ../
-/bin/cp es.json ../api/locales/es.json
-/bin/cp directus.css ../assets/css/directus.css
-rm -Rfv ../installation
+# /bin/cp bookmarks-list.html ../app/templates/bookmarks-list.html
+# /bin/cp main.html ../
+# /bin/cp login.php ../
+# /bin/cp README.md ../
+# /bin/cp .gitignore ../
+# /bin/cp es.json ../api/locales/es.json
+# /bin/cp directus.css ../assets/css/directus.css
+# rm -Rfv ../installation
 
 echo "Delete unused files"
 rm -rfv directus-master/ master.zip
