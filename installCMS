@@ -7,18 +7,18 @@ DBNAME=$1
 DBUSER=$2
 DBPASSWD=$3
 ADMIN=$4
+#
+# cd ~/CMS/$ADMIN/
+# #rm -Rfv ~/CMS/$ADMIN/*
+# #rm -Rfv ~/CMS/$ADMIN/.*
+# git clone https://github.com/Zilus/photograpress.git .
+#
+# composer install
+#
+# find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;
 
-cd ~/CMS/$ADMIN/
-#rm -Rfv ~/CMS/$ADMIN/*
-#rm -Rfv ~/CMS/$ADMIN/.*
-git clone https://github.com/Zilus/photograpress.git .
-
-composer install
-
-find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;
-
-mv api/config_sample.php api/config.php
-mv api/configuration_sample.php api/configuration.php
+# mv api/config_sample.php api/config.php
+# mv api/configuration_sample.php api/configuration.php
 
 sed -i -e "s/yourdb/$DBNAME/g" api/config.php
 sed -i -e "s/youruser/$DBUSER/g" api/config.php
