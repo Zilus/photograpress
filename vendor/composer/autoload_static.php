@@ -18,6 +18,10 @@ class ComposerStaticInit68074d96ba9abcfa0f45c140db7bf06f
             'Zend\\Stdlib\\' => 12,
             'Zend\\Db\\' => 8,
         ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Component\\Yaml\\' => 23,
@@ -46,6 +50,10 @@ class ComposerStaticInit68074d96ba9abcfa0f45c140db7bf06f
         'Zend\\Db\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-db/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (

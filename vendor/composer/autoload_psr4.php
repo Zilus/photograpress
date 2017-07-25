@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
     'Zend\\Db\\' => array($vendorDir . '/zendframework/zend-db/src'),
+    'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Directus\\Permissions\\' => array($vendorDir . '/directus/permissions'),

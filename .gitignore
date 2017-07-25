@@ -2,6 +2,7 @@
 api/config.php
 api/configuration.php
 upgrade/sql/*
+vendor
 
 documents
 
